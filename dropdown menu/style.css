@@ -1,0 +1,19 @@
+.menu-item{
+    border: 2px solid rgb(80, 80, 80);
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+.submenu-item{
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    position: absolute;
+
+    background-color: rgb(240, 164, 164);
+    cursor: pointer;
+}
