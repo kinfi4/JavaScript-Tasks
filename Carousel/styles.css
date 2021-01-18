@@ -1,0 +1,66 @@
+
+.slider-container{
+    height: 350px;
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+.index{
+    position: absolute;
+    left: 5px;
+    top: 4px;
+
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.text{
+    position: absolute;
+    left: 40%;
+    bottom: 30px;
+    
+    padding: 8px 12px;
+    font-size: 40px;
+    font-style: italic;
+    color: whitesmoke;   
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    margin-top: -26px;
+    top: 50%;
+    transition: ease 0.5s;
+    padding: 15px;
+    color: white;
+}
+
+.next{
+    right: 0;
+}
+
+
+.prev:hover, .next:hover{
+    background-color: rgb(155, 155, 155);
+}
+
+.dot{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: linear 0.6s;
+}
+
+.active, .dot:hover{
+    background-color: rgb(58, 58, 58);
+}
+
+.dots-section{
+    text-align: center;
+}
