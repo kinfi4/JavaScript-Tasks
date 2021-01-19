@@ -2,11 +2,13 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function changeSlide(n){ 
-    showSlides(slideIndex += n);
+    slideIndex += n
+    showSlides(slideIndex);
 }
 
 function currentSlide(n){
-    showSlides(slideIndex = n);
+    slideIndex = n
+    showSlides(n);
 }
 
 function showSlides(n){
@@ -21,16 +23,17 @@ function showSlides(n){
         n = slides.length;
     }
 
+    slideIndex = n;
+
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';        
     }
 
 
-
     for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace('active', '');        
+        dots[i].classList.remove('active');   
     }
 
     slides[slideIndex - 1].style.display = 'block';
-    dots[slideIndex - 1].className += 'active';
+    dots[slideIndex - 1].classList.add('active');
 }
