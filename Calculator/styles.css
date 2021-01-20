@@ -1,0 +1,40 @@
+.digit{
+    display: inline-block;
+    border: rgb(156, 156, 156) 1px solid;
+    width: 90px;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#calculator{
+    width: 400px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.equal{
+    width: 100.5%;
+    font-size: larger;
+    border: rgb(156, 156, 156) 1px solid;
+}
+
+.equal-container{
+    margin-top: 10px;
+    padding-right: 0;
+}
+
+#screen{
+    width: 104%;
+    margin: 0;
+
+    border: solid rgb(75, 75, 75) 1px;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 10px;
+    padding-bottom: 2px;
+    min-height: 40px;
+
+    overflow: auto;
+    margin-bottom: 10px;
+}
